@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'bootstrap/dist/css/bootstrap-grid.min.css';
+
+:root {
+    --pokemon-red: #ee1515;
+    --pokemon-intense-red: #f00000;
+    --pokemon-black: #222224;
+    --pokemon-contrast: #f0f0f0;
+}
