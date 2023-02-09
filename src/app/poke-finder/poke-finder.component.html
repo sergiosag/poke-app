@@ -1,0 +1,21 @@
+<div class="container finder" role="main">
+  <!-- search form -->
+  <form [formGroup]="searchForm" class="row finder__form justify-content-center">
+    <div class="col-auto no-padding">
+      <input class="finder__input" [ngClass]="{'finder__input--error': !searchForm.valid && searchForm.controls['search'].touched}" type="number" id="search" formControlName="search">
+    </div>
+    <div class="col-auto no-padding">  
+      <button class="finder__button" (click)="onSubmit()" [ngClass]="{'finder__button--error': !searchForm.valid && searchForm.controls['search'].touched}" [disabled]="!searchForm.valid || pendingRequest">BUSCAR</button>
+    </div>
+    <div class="col-12 no-padding">
+      <p class="finder__initial-text">
+        Búsqueda de pokemon por número de pokedex, del 1 al 151.
+      </p>
+      <p class="finder__pokemon-info" *ngIf="pokemonName">
+        El pokemon que ocupa la posición <strong>#{{searchForm.value.search}}</strong> es <strong>{{pokemonName}}</strong>.
+        <br><span class="finder__pokemon-info--extra-info" [routerLink]="['/details',pokemonName]">Mas información</span>
+      </p>
+    </div>
+  </form>
+  
+</div>
