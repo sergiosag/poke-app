@@ -1,0 +1,41 @@
+.toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: var(--pokemon-intense-red);
+    font-weight: 600;
+    color: var(--pokemon-black);
+    padding: 15px;
+
+    &__container{
+      width: 100%;
+    }
+
+    &__brand{
+      font-size: 40px;
+      display: flex;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    &__link {
+      color: var(--pokemon-black);
+      font-size: 30px;
+      transition: 0.5s;
+      text-decoration: none;
+      &:first-child{
+        margin-right: 10px;
+      }
+      &:hover{
+        text-decoration: none;
+        color: var(--pokemon-contrast);
+      }
+      &:visited{
+        text-decoration: none;
+      }
+    }
+  }
