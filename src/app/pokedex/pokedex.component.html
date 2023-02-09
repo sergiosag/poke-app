@@ -1,0 +1,9 @@
+<div class="container pokedex" role="main">
+    <h1 class="pokedex__title">Pokedex de la región de Kanto</h1>
+    <div class="row justify-content-center pokedex__entry" *ngFor="let pokemon of pokeList" [routerLink]="['/details',pokemon.pokemon_species.name]">
+        <div class="col-11 pokedex__entry-text">
+            #{{pokemon.entry_number}} - {{pokemon.pokemon_species.name}}
+        </div>
+        
+        </div>
+</div>
