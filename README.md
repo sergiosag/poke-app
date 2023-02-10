@@ -2,6 +2,17 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.4.
 
+Uses [PokeApi](pokeapi.co/) to collect the data.
+App divided in two primary screens:
+- Pokedex: Displays the list of all pokemon in the Kanto region.
+- Buscador: Allows users to find any of the pokemon in the Kanto region using on their number as search param
+
+And finally a third screen that displays pokemon details. You can access to this by clicking on any pokemon form the pokedex's list or in the searcher, once you do de search clicking on "Mas informacion..."
+
+## Install project
+
+Run `npm install` for install all the project.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
@@ -18,12 +29,3 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Before running test, maybe you need to set "CHROME_BIN" env variable.
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## PokeApp 
-
-Uses [PokeApi](pokeapi.co/) to collect the data.
-App divided in two primary screens:
-- Pokedex: Displays the list of all pokemon in the Kanto region.
-- Buscador: Allows users to find any of the pokemon in the Kanto region using on their number as search param
-
-And finally a third screen that displays pokemon details. You can access to this by clicking on any pokemon form the pokedex's list or in the searcher, once you do de search clicking on "Mas informacion..."
