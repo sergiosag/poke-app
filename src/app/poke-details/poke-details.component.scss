@@ -38,14 +38,15 @@ unknown;
   &__photo {
     border-radius: 10px;
     border: 1px solid var(--pokemon-black);
-    margin: 25px;
+    margin-top: 25px;
     width: 350px;
     height: auto;
   }
 
   &__info {
-    margin: 25px;
-    font-size: 45px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 30px;
     font-weight: 900;
     color: var(--pokemon-black);
     text-transform: uppercase;
@@ -64,7 +65,7 @@ unknown;
     padding: 5px 10px;
     border-radius: 10px;
     background-color: var(--pokemon-red);
-    border: 2px solid var(--pokemon-black);
+    border: 1px solid var(--pokemon-black);
   }
 
   &__searching {
