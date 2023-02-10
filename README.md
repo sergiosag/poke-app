@@ -27,5 +27,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Running unit tests
 
-Before running test, maybe you need to set "CHROME_BIN" env variable.
+Before running test, maybe you need to set "CHROME_BIN" env variable. Used `export CHROME_BIN=/snap/bin/chromium` on Ubuntu 20.
+
+
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
