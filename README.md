@@ -16,12 +16,14 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Running unit tests
 
+Before running test, maybe you need to set "CHROME_BIN" env variable.
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## PokeApp 
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Uses [PokeApi](pokeapi.co/) to collect the data.
+App divided in two primary screens:
+- Pokedex: Displays the list of all pokemon in the Kanto region.
+- Buscador: Allows users to find any of the pokemon in the Kanto region using on their number as search param
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+And finally a third screen that displays pokemon details. You can access to this by clicking on any pokemon form the pokedex's list or in the searcher, once you do de search clicking on "Mas informacion..."
