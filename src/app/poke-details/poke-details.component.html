@@ -1,0 +1,30 @@
+<div class="container details" role="main">
+  <div class="row details__card justify-content-between align-items-center" *ngIf="pokeId && pokemon">
+    <div class="col-auto">
+      <img class="details__photo  {{pokemon.types[0].type.name}}" src="{{spriteSrc}}" alt="imagen del pokemon">
+    </div>
+    <div class="details__info col-6">
+      <div class="row details__name">
+        #{{pokemon.id}} - {{pokemon.name}}
+      </div>
+      <div class="row justify-content-around">        
+        <div class="col-auto {{type.type.name}} details__type" *ngFor="let type of pokemon.types">
+          {{type.type.name}}
+        </div>
+      </div>
+      <div class="row">
+        <button class="details__button" (click)="rotateImg()">ROTAR</button>
+      </div>
+    </div>
+  </div>
+  <div class="row details__card justify-content-center" *ngIf="pokeId && !hasError && !pokemon">
+    <div class="col-6 details__searching">
+      Buscando...
+    </div>
+  </div>
+  <div class="row details__card justify-content-center" *ngIf="pokeId && hasError && !pokemon">
+    <div class="col-auto details__searching details__searching--error">
+      <strong>Error:</strong> pokemon no encontrado
+    </div>
+  </div>
+</div>

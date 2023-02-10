@@ -1,0 +1,81 @@
+$types: normal,
+fire,
+water,
+electric,
+grass,
+ice,
+fighting,
+poison,
+ground,
+flying,
+bug,
+ghost,
+dragon,
+dark,
+steel,
+fairy,
+psychic,
+shadow,
+unknown;
+
+@each $type in $types {
+  .#{$type} {
+    background-color: var(--pokemon-#{$type});
+  }
+}
+
+.details {
+  margin-top: 70px;
+
+  &__card {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    background-color: var(--pokemon-mid-black);
+    border: 1px solid var(--pokemon-black);
+  }
+
+  &__photo {
+    border-radius: 10px;
+    border: 1px solid var(--pokemon-black);
+    margin: 25px;
+    width: 350px;
+    height: auto;
+  }
+
+  &__info {
+    margin: 25px;
+    font-size: 45px;
+    font-weight: 900;
+    color: var(--pokemon-black);
+    text-transform: uppercase;
+  }
+
+  &__type {
+    border-radius: 10px;
+    padding: 10px 25px;
+
+  }
+
+  &__button {
+    margin-top: 15px;
+    color: var(--pokemon-contrast);
+    font-weight: 900;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: var(--pokemon-red);
+    border: 2px solid var(--pokemon-black);
+  }
+
+  &__searching {
+    margin: 25px;
+    font-size: 45px;
+    color: var(--pokemon-black);
+    text-transform: uppercase;
+    &--error{
+      text-transform: none;
+      color: var(--pokemon-intense-red);
+    }
+  }
+
+}
