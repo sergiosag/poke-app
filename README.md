@@ -11,7 +11,7 @@ And finally a third screen that displays pokemon details. You can access to this
 
 ## Install project
 
-Run `npm install` for install all the project.
+Run `npm install --legacy-peer-deps` for install all the project.
 
 ## Development server
 
